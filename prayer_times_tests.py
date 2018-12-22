@@ -17,7 +17,12 @@ class TestPrayerTimes(unittest.TestCase):
         self.assertIn('city', address)
         self.assertIn('state', address)
         self.assertIn('country', address)
+    
+    def test_get_prayer_times(self):
+        address = 'city=reston&state=va&country=usa'
         
+        timings = get_prayer_times(address)
         
+        self.assertIn('timings', timings.keys())
 if __name__=='__main__':
     unittest.main()
