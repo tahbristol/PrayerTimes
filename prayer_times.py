@@ -29,4 +29,4 @@ def get_prayer_times(address):
     except Exception as e:
         raise e
     
-    return response['data']['timings']
+    return response['data']
