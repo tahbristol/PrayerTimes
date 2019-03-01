@@ -11,7 +11,7 @@ def get_ip_address():
     return response.json()['ip']
     
 def get_address_from_ip(ip):
-    api_key = 'b1978ca33eb7b1733eca5503f8046b49'
+    api_key = 'b1978ca33eb7b1733eca5503f8046b49' # this key has been deleted
     url = f'http://api.ipstack.com/{ip}?access_key={api_key}'
     
     try:
